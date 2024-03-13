@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flight Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <h1>Flight Booking</h1>
+    <form id="bookingForm">
+        <input type="hidden" id="flightId" name="flightId" value="">
+
+        <label for="bookingId">Booking ID:</label>
+        <input type="text" id="bookingId" name="bookingId" value="" disabled>
+        <br>
+        <label for="passengerSurname">Passenger Surname:</label>
+        <input type="text" id="passengerSurname" name="passengerSurname" required>
+        <br>
+        <label for="passengerFirstname">Passenger Firstname:</label>
+        <input type="text" id="passengerFirstname" name="passengerFirstname" required>
+        <br>
+        <label for="passengerDOB">Date of Birth:</label>
+        <input type="date" id="passengerDOB" name="passengerDOB" required>
+        <br>
+        <label for="bookingDate">Booking Date:</label>
+        <input type="date" id="bookingDate" name="bookingDate" required>
+        <br>
+
+        <h2>Flight Details</h2>
+        <p>Flight Name: <span id="flightNamePlaceholder">Flight Name Placeholder</span></p>
+        <p>Flight Number: <span id="flightNumberPlaceholder">Flight Number Placeholder</span></p>
+        <p>Origin: <span id="originCityPlaceholder">Origin City Placeholder</span></p>
+        <p>Destination: <span id="destinationCityPlaceholder">Destination City Placeholder</span></p>
+        <p>Available Seats: <span id="availableSeatsPlaceholder">Available Seats Placeholder</span></p>
+        <p>Amount: <span id="amountPlaceholder">Amount Placeholder</span></p>
+        <p>Departure Date: <span id="departureDatePlaceholder">Departure Date Placeholder</span></p>
+        <p>Arrival Date: <span id="arrivalDatePlaceholder">Arrival Date Placeholder</span></p>
+
+        <button type="submit">Book Flight</button>
+    </form>
+
+    <div id="weatherDetailsPlaceholder">
+        <h3>Weather Details</h3>
+        <p>Actual Temperature: <span id="actualTemperaturePlaceholder">-</span>°C</p>
+        <p>Feels Like Temperature: <span id="feelsLikeTemperaturePlaceholder">-</span>°C</p>
+        <p>Wind Speed: <span id="windSpeedPlaceholder">-</span> m/s</p>
+        <p>Latitude: <span id="latitudePlaceholder">-</span></p>
+        <p>Longitude: <span id="longitudePlaceholder">-</span></p>
+    </div>
+
+    <script src="booking.js"></script>
+    <script></script>
+    
+</body>
+</html>

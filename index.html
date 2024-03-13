@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Flight Concierge</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="My Flight Concierge">
+        <meta name="description" content="Booking Flights">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="header">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </nav>
+            <div id="currencyConversion">
+                <label for="currencySelect">Select Currency:</label>
+                <select id="currencySelect"></select>
+            </div>
+        </div>
+        <div class="welcome-section">
+            <h2>Welcome To</h2>
+            <h1>My Flight Concierge</h1>
+            <p>Congratulations! You can comfortably book your Flight here.</p>
+            <p>Fly in the Cloud at your convenience</p>
+        </div>
+
+        <form id="searchForm" style="margin-bottom: 50px;">
+            <label for="originCity">Origin City:</label>
+            <input type="text" id="originCity" placeholder="Enter Your Origin City" name="originCity" required>
+            <label for="destinationCity">Destination City:</label>
+            <input type="text" id="destinationCity" placeholder="Enter Your Destination City" name="destinationCity" required>
+            <button type="submit">Search For Flights</button>
+        </form>
+        <div id="searchResults" class="search-results"></div>
+
+        <script src="script.js"></script>
+        <script src="currency-conversion.js"></script>
+    </body>
+</html>

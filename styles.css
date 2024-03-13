@@ -1,0 +1,180 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.welcome-section {
+    text-align: center;
+}
+
+.welcome-section h2 {
+    color: #3366cc;
+    font-weight: bold;
+}
+
+.welcome-section h1 {
+    color: #ff6600;
+    font-weight: bold;
+    font-size: 36px;
+}
+
+.welcome-section p {
+    color: #333;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+#currencyConversion {
+    display: flex;
+    align-items: center;
+}
+
+#currencyConversion label {
+    margin-right: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('images/flight_background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.flight-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flight-info {
+    max-width: fit-content;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 50px;
+    border: 5px solid #ccc;
+    border-radius: 50px;
+    display: flex;
+    align-items: last baseline;
+}
+
+.flight-info h2 {
+    margin-top: 0;
+}
+
+.flight-info p {
+    margin-bottom: 10px;
+}
+
+.flight-info button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#searchForm {
+    max-width: fit-content;
+    justify-content: space-between;
+    margin: 20px auto;
+    padding: 50px;
+    border: 5px solid #ccc;
+    border-radius: 50px;
+    display: flex;
+    align-items: last baseline;
+}
+
+#searchForm label {
+    margin-right: 10px;
+}
+
+#searchForm input[type="text"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+#searchForm button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#searchForm button:hover {
+    background-color: #45a049;
+}
+
+/* Styles for the booking form */
+#bookingForm {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+}
+
+#bookingForm label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#bookingForm input[type="text"],
+#bookingForm input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#bookingForm h2 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.2em;
+}
+
+#bookingForm p {
+    margin-bottom: 10px;
+}
+
+#bookingForm button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#bookingForm button:hover {
+    background-color: #0056b3;
+}
